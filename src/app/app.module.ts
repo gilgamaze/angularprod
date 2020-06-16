@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DoctorModule } from './doctor/doctor.module';
+import { PatientModule } from './patient/patient.module';
+import { StaffModule } from './staff/staff.module';
+import { MedicalModule } from './medical/medical.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +14,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DoctorModule,
+    PatientModule,
+    StaffModule,
+    MedicalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
